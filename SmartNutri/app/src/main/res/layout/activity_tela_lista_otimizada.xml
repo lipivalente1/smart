@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TelaListaOtimizada">
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:text="Lista otimizada"
+        android:textColor="#FFFDFD"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.5"
+            android:background="#2E9DAC"
+            android:gravity="center"
+            android:text="Supermercado:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nomeMercado"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.4"
+            android:background="#8BC34A"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Preço Baixo"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.5"
+            android:background="#2E9DAC"
+            android:gravity="center"
+            android:text="Orçamento:"
+            android:textColor="#FDFDFD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/valorOrcamento"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.4"
+            android:background="#8BC34A"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="R$ 20"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.5"
+            android:background="#2E9DAC"
+            android:gravity="center"
+            android:text="Valor total:"
+            android:textColor="#FDFDFD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/valorTotal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.4"
+            android:background="#8BC34A"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="R$ 20"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/contProdutos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

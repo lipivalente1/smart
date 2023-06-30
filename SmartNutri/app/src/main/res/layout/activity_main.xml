@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F7FFF8"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-64dp"
+        >
+
+        <SearchView
+            android:id="@+id/campo_pesquisa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#DAD5D5"
+            android:iconifiedByDefault="false"
+            android:queryHint="Procure um item aqui"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/id_bebida"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#C9F3C8"
+            android:orientation="horizontal"
+            android:onClick="openA2"
+            >
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                app:srcCompat="@drawable/bebida" />
+
+            <TextView
+                android:id="@+id/cat_bebidas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:paddingRight="25dp"
+                android:text="Bebidas"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_cereal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#C9F3C8"
+            android:orientation="horizontal"
+            android:onClick="openA2">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                app:srcCompat="@drawable/cereal" />
+
+            <TextView
+                android:id="@+id/cat_cereal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:paddingRight="25dp"
+                android:text="Grãos e Cereais"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_carne"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#C9F3C8"
+            android:orientation="horizontal"
+            android:onClick="openA2">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                app:srcCompat="@drawable/carne" />
+
+            <TextView
+                android:id="@+id/cat_carne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:paddingRight="25dp"
+                android:text="Carnes"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_outros"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#C9F3C8"
+            android:orientation="horizontal"
+            android:onClick="openA2">
+
+            <ImageView
+                android:id="@+id/imageCereal1"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                app:srcCompat="@drawable/leite" />
+
+            <TextView
+                android:id="@+id/cat_outros"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:paddingRight="25dp"
+                android:text="Outros"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/id_carne"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#C9F3C8"
+            android:orientation="horizontal"
+            android:onClick="openA2">
+
+            <ImageView
+                android:id="@+id/imageCarne1"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                app:srcCompat="@drawable/carne" />
+
+            <TextView
+                android:id="@+id/cat_carnes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:paddingRight="25dp"
+                android:text="Carnes"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout> -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ABE665"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/destaque_view"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="DESTAQUES"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageEtiqueta"
+                android:layout_width="90dp"
+                android:layout_height="56dp"
+                android:layout_marginEnd="110dp"
+                android:layout_weight="5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/destaque_view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/etiqueta" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <ImageView
+                    android:id="@+id/Promo1"
+                    android:layout_width="162dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/promo2" />
+
+                <ImageView
+                    android:id="@+id/Promo2"
+                    android:layout_width="162dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+
+                    app:srcCompat="@drawable/promo2" />
+
+                <ImageView
+                    android:id="@+id/Promo3"
+                    android:layout_width="162dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    app:srcCompat="@drawable/promo2" />
+
+                <ImageView
+                    android:id="@+id/Promo4"
+                    android:layout_width="162dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    app:srcCompat="@drawable/promo2" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
